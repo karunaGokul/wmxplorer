@@ -1,0 +1,22 @@
+.table {   
+    &__toolbar {
+        &--center {
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+    }
+    .table__body tr {
+        .td__link {
+            text-decoration: underline;
+        }
+        .edit-row {
+            opacity: 0;
+        }
+    }
+    &:hover>tbody>tr:hover {
+        .edit-row {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}

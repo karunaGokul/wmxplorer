@@ -1,0 +1,36 @@
+.notification {
+    &-modal {
+        position: absolute;
+        border-radius: 0.9rem;
+        background-color: #ec6d71;
+        color:white;        
+        box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.2);
+        width: max-content;
+        height: 62px;        
+        z-index: 999999;
+        text-align: left;
+        padding: 10px 15px;
+        right: 0;
+        top: -13px;
+        left: -100px;
+
+        &-container {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+       
+        &__body {            
+            font-size: 1.3rem;  
+            font-weight: 500;
+            font-family: $font-general;
+
+            a {
+                color:white;
+                text-decoration: underline;
+            }            
+        }
+    }
+
+   
+}
